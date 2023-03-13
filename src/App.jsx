@@ -10,8 +10,15 @@ import CommunityDev from "./Routes/CommunityDev";
 const App = () => {
     return (
         <>
+            {/*Insert Components either before or after <main /> */}
+            <Header />
             <main className="page">
-                <Home />
+                <Routes>
+                    <Route path="/" element={ <Home /> } />
+                    <Route path="/education" element={ <Education /> } />
+                    <Route path="/art" element={ <Art /> }  />
+                    <Route path="/communitydev" element={ <CommunityDev /> } />
+                </Routes>
             </main>
         </>
     )

@@ -1,23 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Links } from "./Links";
 
 const Header = () => {
-    return (
-        <>
-            <div clasName="navigation-bar">
-                <nav>
-                    <ul>
-                        <li>home</li>
-                        <li>art</li>
-                        <li>education</li>
-                        <li>community development</li>
-                        <li>about</li>
-                        <li>contact</li>
-                    </ul>
-                </nav>
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div className="navigation-bar">
+        <nav>
+          <ul>
+            {Links.map((link, i) => {
+              return (
+                <li key={i}>
+                  <NavLink to={link.to}>{link.name}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+    </>
+  );
+};
 
 export default Header;
