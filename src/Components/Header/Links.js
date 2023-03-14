@@ -1,4 +1,3 @@
-//organizing links with an object array which can later be mapped out
 export const Links = [
     {
         to: '/',
@@ -14,6 +13,14 @@ export const Links = [
     },
     {
         to: '/communitydev',
-        name: 'Community Development'
+        name: 'Community'
+    },
+    {
+        to: '',
+        name: 'Contact'
+    },
+    {
+        to: '',
+        name: 'About'
     }
 ]

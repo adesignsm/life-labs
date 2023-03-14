@@ -7,10 +7,11 @@ import Art from "./Routes/Art";
 import Education from "./Routes/Education";
 import CommunityDev from "./Routes/CommunityDev";
 
+import "./root.css";
+
 const App = () => {
     return (
         <>
-            {/*Insert Components either before or after <main /> */}
             <Header />
             <main className="page">
                 <Routes>

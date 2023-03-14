@@ -1,0 +1,27 @@
+.navigation-bar {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navigation-bar nav > ul {
+    display: flex;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar nav > ul > div {
+    border-right: 1px solid #fff;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.navigation-bar nav > ul > div > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Links } from "./Links";
 
+import "./index.css";
+
 const Header = () => {
   return (
     <>
@@ -10,9 +12,11 @@ const Header = () => {
           <ul>
             {Links.map((link, i) => {
               return (
-                <li key={i}>
-                  <NavLink to={link.to}>{link.name}</NavLink>
-                </li>
+                <div className="navigation-item">
+                  <li key={i}>
+                    <NavLink to={link.to}>{link.name}</NavLink>
+                  </li>
+                </div>
               );
             })}
           </ul>

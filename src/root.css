@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "White Rabbit";
+    src: url("./Assets/Fonts/WhiteRabbit.woff");
+}
+
+:root {
+    --primary-font: "White Rabbit";
+}
