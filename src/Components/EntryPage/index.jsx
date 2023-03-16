@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import $ from "jquery";
 import "./index.css";
 
@@ -43,7 +43,9 @@ const EntryPage = () => {
                     clearInterval(interval);
                     counter = counter;
 
-                    $(".entry-page").delay(1500).fadeOut(300);
+                    if (document.readyState === "complete") {
+                        $(".entry-page").delay(1500).fadeOut(300);
+                    }
                 }
             })
             iteration += 1 / 5;
@@ -52,7 +54,7 @@ const EntryPage = () => {
     
     useEffect(() => {
         setTimeout(() => {
-            init();
+            init(); 
         }, 1000);
     }, []);
     return (
