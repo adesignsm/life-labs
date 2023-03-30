@@ -1,6 +1,10 @@
 .navigation-bar {
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translate(-50%, 2vh);
+    z-index: 9;
     width: 60%;
-    margin: 0 auto;
 }
 
 .navigation-bar nav > ul {
@@ -11,6 +15,8 @@
     justify-content: center;
     align-items: center;
     padding-left: 0;
+    margin-top: 0;
+    border: 2px solid #fff;
 }
 
 .navigation-bar nav > ul > div {
@@ -18,6 +24,10 @@
     text-align: center;
     padding: 2rem;
     width: 100%;
+}
+
+.navigation-bar nav > ul > div:last-child {
+    border-right: none;
 }
 
 .navigation-bar nav > ul > div > li > a {

@@ -1,0 +1,24 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .column:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem;
+    margin: 2rem;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.footer .column:nth-child(1) h1 {
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: normal;
+}

@@ -17,10 +17,12 @@ export const Links = [
     },
     {
         to: '',
-        name: 'Contact'
+        name: 'Contact',
+        id: "contact-nav"
     },
     {
         to: '',
-        name: 'About'
+        name: 'About',
+        id: "about-nav"
     }
 ]

@@ -5,4 +5,58 @@
 
 :root {
     --primary-font: "White Rabbit";
+    --home-bg: url("./Assets/Component_media/Home/home_bg.jpg");
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#main-page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(78, 72, 6, 0.3);
+    backdrop-filter: blur(25px);
+}
+
+.page {
+    background-image: var(--home-bg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.about-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-container .about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFF00;
+    font-family: var(--primary-font);
+    padding: 3rem;
+    width: 25vw;
+    border-radius: 15px;
+}
+
+.about-container .about-content h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: xxx-large;
+}
+
+.about-container .about-content p {
+    margin-bottom: 0;
+    font-size: large;
 }
