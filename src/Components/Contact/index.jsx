@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 
-import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
 const SERVICE_ID = "service_0segoxi";
