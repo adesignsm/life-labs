@@ -3,7 +3,7 @@
     top: 2vh;
     left: 50%;
     transform: translate(-50%, 2vh);
-    z-index: 9;
+    z-index: 999;
     width: 60%;
 }
 

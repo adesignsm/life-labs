@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 import Home from "./Routes/Home";
 import Art from "./Routes/Art";
@@ -25,6 +26,7 @@ const App = () => {
                     <Route path="/communitydev" element={ <CommunityDev /> } />
                 </Routes>
                 <About />
+                <Contact />
                 <Footer />
             </main>
         </>

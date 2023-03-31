@@ -10,13 +10,32 @@ const Header = () => {
 
   const toggleVisibility = (e) => {
       if (e.target.id === "about-nav") {
-          if ($(".about-container").css("display") === "none") {
-            $(".about-container").fadeIn(100);
-            $(".about-container").css("display", "flex");
-          } else {
-            $(".about-container").fadeOut(100);
-          }
+        e.preventDefault();
+        if ($(".about-container").css("display") === "none") {
+          $(".about-container").fadeIn(100);
+          $(".about-container").css("display", "flex");
+        } else {
+          $(".about-container").fadeOut(100);
+        }
+      } else if (e.target.id === "contact-nav") {
+        e.preventDefault();
+        if ($(".contact-form-container").css("display") === "none") {
+          $(".contact-form-container").fadeIn(100);
+          $(".contact-form-container").css("display", "flex");
+        } else {
+          $(".contact-form-container").fadeOut(100);
+        }
       }
+  }
+
+  window.onmouseup = (e) => {
+    if (e.target.id !== "about-nav") {
+      $(".about-container").fadeOut(100);
+    }
+
+    if (e.target.id !== "contact-nav") {
+      $(".contact-form-container").fadeOut(100);
+    }
   }
 
   return (

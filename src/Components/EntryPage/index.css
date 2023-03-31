@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     gap: 15%;
+    z-index: 1000;
 }
 
 .entry-page h1 {
@@ -21,5 +22,5 @@
     transform: scale(0.0005);
     opacity: 0.0005;
     filter: blur(50px);
-    text-shadow: 0 0 100px #fff, 0 0 10px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff;
+    /* text-shadow: 0 0 100px #fff, 0 0 10px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff, 0 0 100px #fff; */
 }

@@ -1,0 +1,65 @@
+.contact-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-form-container .contact-content {
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFF00;
+    font-family: var(--primary-font);
+    padding: 3rem;
+    width: 25vw;
+    border-radius: 15px;
+}
+
+.contact-form-container .contact-content h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: xxx-large;
+}
+
+.contact-form-container .contact-content input, 
+.contact-form-container .contact-content textarea {
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFFF00;
+    border: 0.01em solid #FFFF00;
+    font-family: var(--primary-font);
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.contact-form-container .contact-content input {
+    text-transform: uppercase;
+}
+
+.contact-form-container .contact-content input:focus {
+    outline: none;
+}
+
+.contact-form-container .contact-content textarea:focus {
+    outline: none;
+}
+
+.contact-form-container .contact-content .submit-button {
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: xx-large;
+    padding: 1rem;
+    background-color: #FFFF00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

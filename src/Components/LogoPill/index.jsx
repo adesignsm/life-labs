@@ -71,7 +71,7 @@ const LogoPill = () => {
 
   return (
     <>
-      <Canvas onMouseMove={onMove} camera={{ position: [0, 0, 30]}}>
+      <Canvas id="logo-canvas" onMouseMove={onMove} camera={{ position: [0, 0, 30]}}>
         <Model />
         <Environment preset="sunset" />
         <CameraControls />
