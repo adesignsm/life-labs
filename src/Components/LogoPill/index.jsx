@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useEffect, useRef, useState } from "react";
 
 import * as THREE from "three";
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, Glitch } from '@react-three/postprocessing';

@@ -1,7 +1,9 @@
+import $ from "jquery";
+
 export const Links = [
     {
         to: '/',
-        name: 'home'
+        name: 'home',
     },
     {
         to: '/education',
