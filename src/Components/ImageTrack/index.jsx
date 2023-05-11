@@ -30,8 +30,6 @@ const ImageTrack = () => {
 
     trackRef.current.dataset.percentage = nextPercentage;
 
-    console.log(e);
-
     trackRef.current.animate(
       {
         transform: `translate(${nextPercentage}%, -50%)`,
